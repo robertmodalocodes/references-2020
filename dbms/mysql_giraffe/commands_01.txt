@@ -1,0 +1,81 @@
+# creating a table
+
+CREATE DATABASE
+
+CREATE TABLE student (
+	student_id INT,
+	name VARCHAR(20),
+	major VARCHAR(20),
+	PRIMARY KEY(student_id)
+);
+
+CREATE TABLE student (
+	student_id INT,
+	name VARCHAR(20) NOT NULL, # not null means it can't be empty 
+	major VARCHAR(20) UNIQUE, # unique means it can't be duplicated
+	PRIMARY KEY(student_id)
+);
+
+# setting default values for a column
+CREATE TABLE student (
+	student_id INT AUTO_INCREMENT, # auto increment means the student_id will be automatically incremented without adding the value manually
+	name VARCHAR(20),
+	major VARCHAR(20) DEFAULT 'undecided',
+	PRIMARY KEY(student_id)
+);
+
+# table description
+DESCRIBE student;
+
+# deleting/dropping a table
+DROP TABLE student;
+
+# adding a column
+ALTER TABLE student ADD gpa DECIMAL(3, 2); # 3 total digits, with 2 decimals after the comma
+
+# deleting a column
+alter table student DROP COLUMN gpa
+
+# inserting data
+INSERT INTO student VALUES(2, 'Jack', 'Biology');
+INSERT INTO student(student_id, name, major) VALUES(1, 'Jack', 'Biology');
+
+# inserting by column
+
+# selecting
+# selecting everything
+SELECT * FROM student
+
+# UPDATE
+UPDATE student
+SET major = 'Bio'
+WHERE major = 'Biology';
+
+# updating specific thing by attributes
+UPDATE student
+SET major = 'Chem'
+WHERE student_id = 3;
+
+# updating and replacing
+UPDATE student
+SET major = 'Biochem'
+WHERE major = 'Bio' OR major = 'Chem';
+
+# update multiple rows
+UPDATE student
+SET name = 'Taylor', major = 'undecided'
+WHERE student_id = 3;
+
+# replace everything
+UPDATE student
+SET major = 'undecided' # will change every major's values into undecided
+
+# DELETE
+# deleting everything
+DELETE FROM student
+
+# deleting by a value
+DELETE FROM student
+WHERE student_id = 7;
+
+

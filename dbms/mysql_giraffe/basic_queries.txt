@@ -1,0 +1,70 @@
+# SELECT
+# select everything
+SELECT * FROM student;
+
+# select values from a column/attribute
+SELECT name
+FROM student;
+
+# select values from multiple columns
+SELECT name, major
+FROM student;
+
+# or this way
+SELECT student.name, student.major
+FROM student;
+
+# select and order
+SELECT student.name, student.major
+FROM student
+ORDER BY student_id DESC; # sort by id in descending order
+
+SELECT *
+FROM student
+ORDER BY student_id ASC; # sort by id in ascending order
+
+# ordering by multiple conditions
+SELECT *
+FROM student
+ORDER BY major, student_id DESC; # sort by major first and then id
+
+# limit search
+SELECT *
+FROM student
+LIMIT 3;
+
+# filtering
+SELECT *
+FROM student
+WHERE major = 'Biochem';
+
+SELECT name, major
+FROM student
+WHERE major = 'Biochem' OR major = 'Phys';
+
+# filtering by different columns
+SELECT name, major
+FROM student
+WHERE major = 'Biochem' OR name = 'Taylor';
+
+-- filtering conditional operators
+-- <, >, <=, >=, =, <>, AND, OR
+
+# filtering by conditional operators
+SELECT name, major
+FROM student
+WHERE major <> 'Biochem' OR name = 'Taylor'; # <> means not equal to
+
+# filtering by different columns
+SELECT name, major
+FROM student
+WHERE student_id <= 3 AND name <> 'Jack';
+
+# filtering using in
+SELECT name, major
+FROM student
+WHERE name IN('Claire', 'Kate', 'Mike');
+
+SELECT *
+FROM student
+WHERE major IN('Biochem') AND student_id > 2;

@@ -1,0 +1,40 @@
+DELIMITER $$
+CREATE
+	TRIGGER my_trigger BEFORE INSERT
+    ON employee
+    FOR EACH ROW BEGIN
+    	INSERT INTO trigger_test VALUES('added_new_trigger');
+    END$$
+DELIMITER ;
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+DELIMITER $$
+CREATE
+	TRIGGER my_trigger BEFORE INSERT
+    ON employee
+    FOR EACH ROW BEGIN
+    	INSERT INTO trigger_test VALUES('added_new_trigger');
+    END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE
+	TRIGGER my_trigger2 BEFORE INSERT
+    ON employee
+    FOR EACH ROW BEGIN
+    	IF NEW.sex = 'M' THEN
+        	INSERT INTO trigger_test VALUES('added male employee');
+        ELSEIF NEW.sex = 'F' THEN
+        	INSERT INTO trigger_test VALUES('added female');
+        ELSE
+        	INSERT INTO trigger_test VALUES('added other employee');
+        END IF;
+    END$$
+DELIMITER ;
+
+-------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+
+DROP TRIGGER my_trigger;

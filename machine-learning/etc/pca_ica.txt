@@ -1,0 +1,10 @@
+"""
+representasi ICA dalam ruang fitur memberikan gambaran ICA geometrik
+ICA adalah suatu algoritma yang mencari dan menemukan arah dalam suatu ruang fitur
+yang bersesuaian dengan proyeksi yang tidak berdistribusi normal (gaussian).
+Arah-arah ini tidak harus ortogonal terhadap ruang fitur awal, tetapi ortogonal
+terhadap ruang fitur baru di mana semua jarak memiliki ragam yang sama.
+
+Di sisi lain, PCA mencari dan menemukan arah ortogonal terhadap ruang fitur awal
+yang sesuai dengan arah yang memiliki ragam maksimum.
+

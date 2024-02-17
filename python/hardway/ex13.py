@@ -1,0 +1,15 @@
+from sys import argv
+# read the WYSS section for how to run this
+script, first, second, third = argv
+
+
+print("The script is called:", script)
+print("Your first variable is:", first)
+print("Your second variable is:", second)
+print("Your third variable is:", third)
+print("")
+
+print(input("Input 1: "))
+print(input("input 2: "))
+print(input("Input 3: "))
+print(input("Input 4: "))

@@ -1,0 +1,72 @@
+#Basic clustering, taken from R and Data Mining: Examples and Case Studies, Yanchang Zhao, April 26, 2013
+
+#K-means clustering with 3 clusters
+iris2 <- iris
+iris2$Species <- NULL
+(kmeans.result <- kmeans(iris2, 3))
+
+#clustering result is compared with the class label (Species) 
+table(iris$Species, kmeans.result$cluster)
+
+#Plot of cluster
+plot(iris2[c("Sepal.Length", "Sepal.Width")], col = kmeans.result$cluster)
+# plot cluster centers
+points(kmeans.result$centers[,c("Sepal.Length", "Sepal.Width")], col = 1:3, pch = 8, cex=2)
+
+#k-Medoids Clustering using PAM (Partitioning Around Medoids)
+library(fpc)
+pamk.result <- pamk(iris2)
+#number of clusters
+pamk.result$nc
+
+#check clustering against actual species
+table(pamk.result$pamobject$clustering, iris$Species)
+
+layout(matrix(c(1,2),1,2)) # 2 graphs per page
+plot(pamk.result$pamobject)
+layout(matrix(1)) # change back to one graph per page
+
+#pam() with k = 3
+pam.result <- pam(iris2, 3)
+table(pam.result$clustering, iris$Species)
+
+#plot pam results
+layout(matrix(c(1,2),1,2)) # 2 graphs per page
+plot(pam.result)
+layout(matrix(1)) # change back to one graph per page
+
+#clara() with k = 3
+clara.result <- clara(iris2, 3)
+table(clara.result$clustering, iris$Species)
+
+#Hierarchical clustering
+idx <- sample(1:dim(iris)[1], 40)
+irisSample <- iris[idx,]
+irisSample$Species <- NULL
+hc <- hclust(dist(irisSample), method="ave")
+
+#plot cluster dendrogram
+plot(hc, hang = -1, labels=iris$Species[idx])
+# cut tree into 3 clusters
+rect.hclust(hc, k=3)
+groups <- cutree(hc, k=3)
+
+#Density-based Clustering using DBSCAN
+library(fpc)
+iris2 <- iris[-5] # remove class tags
+
+ds <- dbscan(iris2, eps=0.42, MinPts=5)
+#compare clusters with original class labels
+table(ds$cluster, iris$Species)
+
+#plot clustering results
+plot(ds, iris2)
+plot(ds, iris2[c(1,4)])
+plotcluster(iris2, ds$cluster)
+
+#k-means with estimating k and initialisations
+options(digits=3)
+set.seed(20000)
+face <- rFace(50,dMoNo=2,dNoEy=0,p=2)
+pka <- kmeansruns(face,krange=1:5,critout=TRUE,runs=2,criterion="asw")
+pkc <- kmeansruns(face,krange=1:5,critout=TRUE,runs=2,criterion="ch")

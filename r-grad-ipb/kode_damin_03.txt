@@ -1,0 +1,66 @@
+dataset <- read.csv('rain_ausie2.csv') # disesuaikan dengan folder dataset
+rain <- dataset # variabel yg mengacu dataset (supaya aman wkwk)
+# nanti yang dipake rain
+
+# Decision Trees with Package rpart
+str(rain)
+set.seed(1234)
+clas <- sample(2, nrow(rain), replace=TRUE, prob=c(0.8, 0.2))
+# create training set and testing set
+trainData <- rain[clas==1,]
+testData <- rain[clas==2,]
+
+library(party)
+# creating the model
+myFormula <- RainTomorrow ~ Humidity3pm + Sunshine + Rainfall + Cloud3pm 
+# atribut yang dipakai untuk training (boleh pake atribut lain / atau pake semua)
+rain_ctree <- ctree(myFormula, data=trainData)
+# check the prediction
+table(predict(rain_ctree), trainData$RainTomorrow) # RainTomorrow
+
+print(rain_ctree)
+plot(rain_ctree)
+plot(rain_ctree, type="simple")
+# predict on test data
+testPred <- predict(rain_ctree, newdata = testData)
+table(testPred, testData$RainTomorrow)
+
+
+# Boleh langsung ke kode yang ini aja. Ga perlu jalanin kode yang di atas (dua-duanya sama)
+# Cuma yang ini pake c5.0
+
+# Classification using c5.0, source: Package C50 documetation 
+# Package required: C50, caret 
+# Read dataset
+
+dataset <- read.csv("rain_ausie2.csv")
+set.seed(9850)
+
+library(C50)
+library(caret)
+
+# Apply cross fold validation
+folds<-cut(seq(1,nrow(dataset)),breaks=10, labels=FALSE)
+for(i in 1:10){
+  testIndexes <- which(folds==i, arr.ind=TRUE)
+  testData <- dataset[testIndexes, ]
+  trainData <-  dataset[-testIndexes,]}
+
+# Create decision tree
+oneTree  <- C5.0(RainTomorrow ~ Humidity3pm + Sunshine + Rainfall + Cloud3pm, data=trainData)
+oneTree
+summary(oneTree)
+
+library(e1071)
+# Calculate accuracy of tree-based model using function  predict 
+oneTreePred  <-  predict(oneTree, testData)
+postResample(oneTreePred,testData$RainTomorrow) # RainTomorrow
+
+# Create rule-based model
+rules <- C5.0(RainTomorrow ~ Humidity3pm + Sunshine + Rainfall + Cloud3pm, data=trainData, rules=TRUE)
+rules
+summary(rules)
+
+# Calculate accuracy of rule-based model Using predict 
+rulesPred <-  predict(rules,testData)
+postResample(predict(rules,testData),testData$RainTomorrow)

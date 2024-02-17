@@ -1,0 +1,14 @@
+#Basic clustering, taken from R and Data Mining: Examples and Case Studies, Yanchang Zhao, April 26, 2013
+
+#K-means clustering with 3 clusters
+iris2 <- iris
+iris2$Species <- NULL
+(kmeans.result <- kmeans(iris2, 3))
+
+#clustering result is compared with the class label (Species) 
+table(iris$Species, kmeans.result$cluster)
+
+#Plot of cluster
+plot(iris2[c("Sepal.Length", "Sepal.Width")], col = kmeans.result$cluster)
+# plot cluster centers
+points(kmeans.result$centers[,c("Sepal.Length", "Sepal.Width")], col = 1:3, pch = 8, cex=2)

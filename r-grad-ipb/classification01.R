@@ -1,0 +1,85 @@
+#Basic classification, taken from R and Data Mining: Examples and Case Studies, Yanchang Zhao, April 26, 2013
+
+#Decision Trees with Package rpart
+str(iris)
+set.seed(1234)
+ind <- sample(2, nrow(iris), replace=TRUE, prob=c(0.7, 0.3))
+# create training set and testing set
+trainData <- iris[ind==1,]
+testData <- iris[ind==2,]
+
+library(party)
+# creating the model
+myFormula <- Species ~ Sepal.Length + Sepal.Width + Petal.Length + Petal.Width
+iris_ctree <- ctree(myFormula, data=trainData)
+# check the prediction
+table(predict(iris_ctree), trainData$Species)
+
+print(iris_ctree)
+plot(iris_ctree)
+plot(iris_ctree, type="simple")
+# predict on test data
+testPred <- predict(iris_ctree, newdata = testData)
+table(testPred, testData$Species)
+
+# Classification using c5.0, source: Package C50 documetation 
+# Package required: C50, caret 
+# Read dataset 
+dataset <- read.csv("D:/Courses/MKOM_Topik dalam Data Mining Terapan/Genap1617/Bahan Praktikum//churn.csv")
+set.seed(9850)
+
+# Apply cross fold validation
+folds<-cut(seq(1,nrow(dataset)),breaks=10, labels=FALSE)
+for(i in 1:10){
+  testIndexes <- which(folds==i, arr.ind=TRUE)
+  testData <- dataset[testIndexes, ]
+  trainData <-  dataset[-testIndexes,]}
+
+# Create decision tree
+oneTree  <- C5.0(CLASS~., data=trainData)
+oneTree
+summary(oneTree)
+
+# Calculate accuracy of tree-based model using function  predict 
+oneTreePred  <-  predict(oneTree, testData)
+postResample(oneTreePred,testData$CLASS)
+
+# Create rule-based model
+rules<-C5.0(CLASS~.,data=trainData, rules=TRUE)
+rules
+summary(rules)
+
+# Calculate accuracy of rule-based model Using predict 
+rulesPred <-  predict(rules,testData)
+postResample(predict(rules,testData),testData$CLASS)
+
+# Classification using c5.0 for hotspot dataset, source: Package C50 documetation 
+# Package required: C50, caret 
+# Read dataset 
+dataset <- read.csv("D:/Courses/MKOM_Topik dalam Data Mining Terapan/Genap1617/Bahan Praktikum//sumatera2015.csv")
+set.seed(9850)
+
+# Apply cross fold validation
+folds<-cut(seq(1,nrow(dataset)),breaks=10, labels=FALSE)
+for(i in 1:10){
+  testIndexes <- which(folds==i, arr.ind=TRUE)
+  testData <- dataset[testIndexes, ]
+  trainData <-  dataset[-testIndexes,]}
+
+# Create decision tree
+oneTree  <- C5.0(CLASS~., data=trainData)
+oneTree
+summary(oneTree)
+
+# Calculate accuracy of tree-based model using function  predict 
+oneTreePred  <-  predict(oneTree, testData)
+postResample(oneTreePred,testData$CLASS)
+
+# Create rule-based model
+rules<-C5.0(CLASS~.,data=trainData, rules=TRUE)
+rules
+summary(rules)
+
+# Calculate accuracy of rule-based model Using predict 
+rulesPred <-  predict(rules,testData)
+postResample(predict(rules,testData),testData$CLASS)

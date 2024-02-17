@@ -1,0 +1,23 @@
+setwd(choose.dir())
+raindata <- read.csv("rainausie_norm.csv")
+
+View(raindata)
+
+# raindata2 <- raindata[,c(-1,-2,-8,-10,-11,-12,-14,-16,-18,-20,-22)] # menghapus beberapa variabel/atribut/kolom
+
+# View(raindata2)
+
+raincluster <- raindata
+
+
+#K-means clustering dengan 3 cluster
+raincluster$RainTomorrow <- NULL
+(kmeans.result <- kmeans(raincluster, 3))
+
+#hasil clustering di bandingkan dengan label asli
+table(raindata$RainTomorrow, kmeans.result$cluster)
+
+#Plot cluster
+plot(raincluster[c("Pressure3pm", "Temp3pm")], col = kmeans.result$cluster)
+#plot cluster centers
+points(kmeans.result$centers[,c("Pressure3pm", "Temp3pm")], col = 1:3, pch = 8, cex=2)

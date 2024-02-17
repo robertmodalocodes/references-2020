@@ -1,0 +1,253 @@
+01/01/2020;envelope protein;1;China
+01/01/2020;membrane glycoprotein;1;China
+01/01/2020;nucleocapsid phosphoprotein;1;China
+01/01/2020;ORF10 protein;1;China
+01/01/2020;orf1ab polyprotein;1;China
+01/01/2020;ORF3a protein;1;China
+01/01/2020;ORF6 protein;1;China
+01/01/2020;ORF7a protein;1;China
+01/01/2020;ORF8 protein;1;China
+01/01/2020;surface glycoprotein;1;China
+02/01/2020;envelope protein;2;China;China
+02/01/2020;matrix protein;2;China;China
+02/01/2020;nucleocapsid protein;2;China;China
+02/01/2020;orf1ab polyprotein;2;China;China
+02/01/2020;surface glycoprotein;2;China;China
+05/02/2020;envelope protein;1;Taiwan
+05/02/2020;membrane glycoprotein;1;Taiwan
+05/02/2020;nucleocapsid phosphoprotein;1;Taiwan
+05/02/2020;ORF10 protein;1;Taiwan
+05/02/2020;orf1ab polyprotein;1;Taiwan
+05/02/2020;ORF3a protein;1;Taiwan
+05/02/2020;ORF6 protein;1;Taiwan
+05/02/2020;ORF7a protein;1;Taiwan
+05/02/2020;ORF8 protein;1;Taiwan
+05/02/2020;surface glycoprotein;1;Taiwan
+06/02/2020;nucleocapsid phosphoprotein;1;Philippines
+08/01/2020;orf1ab polyprotein;1;Thailand
+10/01/2020;envelope protein;1;China
+10/01/2020;membrane glycoprotein;1;China
+10/01/2020;nucleocapsid phosphoprotein;1;China
+10/01/2020;ORF1ab polyprotein;1;China
+10/01/2020;ORF3 protein;1;China
+10/01/2020;ORF6 protein;1;China
+10/01/2020;ORF7 protein;1;China
+10/01/2020;ORF8 protein;1;China
+10/01/2020;surface glycoprotein;1;China
+11/01/2020;envelope protein;1;China
+11/01/2020;membrane glycoprotein;1;China
+11/01/2020;nucleocapsid phosphoprotein;1;China
+11/01/2020;ORF10 protein;1;China
+11/01/2020;orf1ab polyprotein;1;China
+11/01/2020;ORF3a protein;1;China
+11/01/2020;ORF6 protein;1;China
+11/01/2020;ORF7a protein;1;China
+11/01/2020;ORF8 protein;1;China
+11/01/2020;surface glycoprotein;1;China
+13/01/2020;orf1ab polyprotein;1;Thailand
+17/01/2020;envelope protein;1;China
+17/01/2020;membrane glycoprotein;1;China
+17/01/2020;nucleocapsid phosphoprotein;1;China
+17/01/2020;ORF10 protein;1;China
+17/01/2020;orf1ab polyprotein;2;China;China
+17/01/2020;ORF3a protein;1;China
+17/01/2020;ORF6 protein;1;China
+17/01/2020;ORF7a protein;1;China
+17/01/2020;ORF7b;1;China
+17/01/2020;ORF8 protein;1;China
+17/01/2020;surface glycoprotein;1;China
+19/01/2020;envelope protein;1;USA
+19/01/2020;membrane glycoprotein;1;USA
+19/01/2020;nucleocapsid phosphoprotein;1;USA
+19/01/2020;orf10 protein;1;USA
+19/01/2020;orf1ab polyprotein;1;USA
+19/01/2020;orf3a protein;1;USA
+19/01/2020;orf6 protein;1;USA
+19/01/2020;orf7a protein;1;USA
+19/01/2020;orf8 protein;1;USA
+19/01/2020;surface glycoprotein;1;USA
+20/01/2020;ORF10 proteiin;1;China
+20/01/2020;orf1ab polyprotein;1;China
+20/01/2020;ORF3a protein;1;China
+20/01/2020;ORF6 protein;1;China
+20/01/2020;ORF7a protein;1;China
+20/01/2020;ORF8 protein;1;China
+20/01/2020;structural protein;3;China;China;China
+20/01/2020;surface glycoprotein;1;China
+2019-12;2-O-ribose methyltransferase;1;China
+2019-12;envelope protein;1;China
+2019-12;membrane glycoprotein;1;China
+2019-12;nsp11;1;China
+2019-12;nucleocapsid phosphoprotein;1;China
+2019-12;ORF10 protein;1;China
+2019-12;orf1ab polyprotein;2;China;China
+2019-12;ORF3a protein;1;China
+2019-12;ORF6 protein;1;China
+2019-12;ORF7a protein;1;China
+2019-12;ORF8 protein;1;China
+2019-12;surface glycoprotein;1;China
+2019-13;ORF10 protein;1;China
+2019-14;orf1a polyprotein;1;China
+2019-15;ORF7b;1;China
+2019-16;surface glycoprotein;1;China
+2019-17;ORF3a protein;1;China
+2019-18;envelope protein;1;China
+2019-19;membrane glycoprotein;1;China
+2019-20;ORF6 protein;1;China
+2019-21;ORF7a protein;1;China
+2019-22;ORF8 protein;1;China
+2019-23;nucleocapsid phosphoprotein;1;China
+2019-24;leader protein;1;China
+2019-25;nsp2;1;China
+2019-26;nsp3;1;China
+2019-27;nsp4;1;China
+2019-28;3C-like proteinase;1;China
+2019-29;nsp6;1;China
+2019-30;nsp7;1;China
+2019-31;nsp8;1;China
+2019-32;nsp9;1;China
+2019-33;nsp10;1;China
+2019-34;RNA-dependent RNA polymerase;1;China
+2019-35;helicase;1;China
+2019-36;3-to-5 exonuclease;1;China
+2019-37;endoRNAse;1;China
+2020-01;envelope protein;6;Japan;Japan;Japan;South Korea;Japan;Japan
+2020-01;membrane glycoprotein;8;Japan;Japan;Japan;Italy;Japan;Japan;South Korea;Italy
+2020-01;nucleocapsid phosphoprotein;6;Japan;Japan;Japan;Japan;Japan;South Korea
+2020-01;ORF10 protein;6;Japan;Japan;Japan;South Korea;Japan;Japan
+2020-01;orf1ab polyprotein;12;China;China;China;China;China;China;Japan;Japan;Japan;Japan;Japan;South Korea
+2020-01;ORF1ab polyprotein;7;China;China;Australia;Australia;China;China;China
+2020-01;ORF3a protein;6;Japan;Japan;Japan;South Korea;Japan;Japan
+2020-01;ORF6 protein;6;Japan;Japan;Japan;South Korea;Japan;Japan
+2020-01;ORF7a protein;6;Japan;Japan;Japan;Japan;Japan;South Korea
+2020-01;ORF8 protein;6;Japan;Japan;Japan;South Korea;Japan;Japan
+2020-01;surface glycoprotein;13;China;Japan;China;Japan;Japan;China;China;China;Japan;Japan;South Korea;China;China
+2020-02;ORF1ab polyprotein;2;Australia;Australia
+21/01/2020;envelope protein;1;USA
+21/01/2020;membrane glycoprotein;1;USA
+21/01/2020;nucleocapsid phosphoprotein;1;USA
+21/01/2020;orf10 protein;1;USA
+21/01/2020;orf1ab polyprotein;1;USA
+21/01/2020;orf3a protein;1;USA
+21/01/2020;orf6 protein;1;USA
+21/01/2020;orf7a protein;1;USA
+21/01/2020;orf8 protein;1;USA
+21/01/2020;surface glycoprotein;1;USA
+22/01/2020;envelope protein;2;USA;USA
+22/01/2020;membrane glycoprotein;2;USA;USA
+22/01/2020;nucleocapsid phosphoprotein;2;USA;USA
+22/01/2020;orf10 protein;2;USA;USA
+22/01/2020;orf1ab polyprotein;2;USA;USA
+22/01/2020;orf3a protein;2;USA;USA
+22/01/2020;orf6 protein;2;USA;USA
+22/01/2020;orf7a protein;2;USA;USA
+22/01/2020;orf8 protein;2;USA;USA
+22/01/2020;surface glycoprotein;2;USA;USA
+23/01/2020;envelope protein;1;USA
+23/01/2020;membrane glycoprotein;1;USA
+23/01/2020;nucleocapsid phosphoprotein;2;USA;Philippines
+23/01/2020;orf10 protein;1;USA
+23/01/2020;orf1ab polyprotein;1;USA
+23/01/2020;orf3a protein;1;USA
+23/01/2020;orf6 protein;1;USA
+23/01/2020;orf7a protein;1;USA
+23/01/2020;orf8 protein;1;USA
+23/01/2020;surface glycoprotein;1;USA
+23/12/2019;envelope protein;1;China
+23/12/2019;membrane glycoprotein;1;China
+23/12/2019;nucleocapsid phosphoprotein;1;China
+23/12/2019;ORF10 protein;1;China
+23/12/2019;orf1ab polyprotein;1;China
+23/12/2019;ORF3a protein;1;China
+23/12/2019;ORF6 protein;1;China
+23/12/2019;ORF7a protein;1;China
+23/12/2019;ORF8 protein;1;China
+23/12/2019;surface glycoprotein;1;China
+24/01/2020;orf1ab polyprotein;3;Malaysia;Malaysia;Malaysia
+25/01/2020;envelope protein;3;USA;Australia;USA
+25/01/2020;membrane glycoprotein;3;USA;Australia;USA
+25/01/2020;nucleocapsid phosphoprotein;3;USA;Australia;USA
+25/01/2020;orf10 protein;2;USA;USA
+25/01/2020;ORF10 protein;1;Australia
+25/01/2020;orf1ab polyprotein;3;Australia;USA;USA
+25/01/2020;orf3a protein;2;USA;USA
+25/01/2020;ORF3a protein;1;Australia
+25/01/2020;orf6 protein;2;USA;USA
+25/01/2020;ORF6 protein;1;Australia
+25/01/2020;orf7a protein;2;USA;USA
+25/01/2020;ORF7a protein;1;Australia
+25/01/2020;orf8 protein;2;USA;USA
+25/01/2020;ORF8 protein;1;Australia
+25/01/2020;surface glycoprotein;3;USA;Australia;USA
+26/01/2020;nucleocapsid phosphoprotein;1;Philippines
+26/01/2020;orf1ab polyprotein;1;Philippines
+27/01/2020;envelope protein;1;USA
+27/01/2020;membrane glycoprotein;1;USA
+27/01/2020;nucleocapsid phosphoprotein;1;USA
+27/01/2020;orf10 protein;1;USA
+27/01/2020;orf1ab polyprotein;1;USA
+27/01/2020;orf3a protein;1;USA
+27/01/2020;orf6 protein;1;USA
+27/01/2020;orf7a protein;1;USA
+27/01/2020;orf8 protein;1;USA
+27/01/2020;surface glycoprotein;1;USA
+28/01/2020;envelope protein;1;USA
+28/01/2020;membrane glycoprotein;1;USA
+28/01/2020;nucleocapsid phosphoprotein;1;USA
+28/01/2020;orf10 protein;1;USA
+28/01/2020;orf1ab polyprotein;1;USA
+28/01/2020;orf3a protein;1;USA
+28/01/2020;orf6 protein;1;USA
+28/01/2020;orf7a protein;1;USA
+28/01/2020;orf8 protein;1;USA
+28/01/2020;surface glycoprotein;1;USA
+29/01/2020;envelope protein;5;USA;USA;USA;USA;Finland
+29/01/2020;membrane glycoprotein;5;USA;USA;USA;USA;Finland
+29/01/2020;nucleocapsid phosphoprotein;5;USA;USA;USA;USA;Finland
+29/01/2020;orf10 protein;4;USA;USA;USA;USA
+29/01/2020;ORF10 protein;1;Finland
+29/01/2020;orf1a polyprotein;1;Finland
+29/01/2020;orf1ab polyprotein;5;USA;USA;USA;USA;Finland
+29/01/2020;orf3a protein;4;USA;USA;USA;USA
+29/01/2020;ORF3a protein;1;Finland
+29/01/2020;orf6 protein;4;USA;USA;USA;USA
+29/01/2020;ORF6 protein;1;Finland
+29/01/2020;orf7a protein;4;USA;USA;USA;USA
+29/01/2020;ORF7a protein;1;Finland
+29/01/2020;ORF7b protein;1;Finland
+29/01/2020;orf8 protein;4;USA;USA;USA;USA
+29/01/2020;ORF8 protein;1;Finland
+29/01/2020;surface glycoprotein;5;USA;USA;USA;USA;Finland
+30/12/2019;envelope protein;8;China;China;China;China;China;China;China;China
+30/12/2019;membrane glycoprotein;3;China;China;China
+30/12/2019;membrane protein;5;China;China;China;China;China
+30/12/2019;nonstructural protein NS3;5;China;China;China;China;China
+30/12/2019;nonstructural protein NS6;5;China;China;China;China;China
+30/12/2019;nonstructural protein NS7a;5;China;China;China;China;China
+30/12/2019;nonstructural protein NS7b;5;China;China;China;China;China
+30/12/2019;nonstructural protein NS8;5;China;China;China;China;China
+30/12/2019;nucleocapsid phosphoprotein;3;China;China;China
+30/12/2019;nucleocapsid protein;5;China;China;China;China;China
+30/12/2019;ORF10 protein;3;China;China;China
+30/12/2019;orf1ab polyprotein;8;China;China;China;China;China;China;China;China
+30/12/2019;ORF3a protein;3;China;China;China
+30/12/2019;ORF6 protein;3;China;China;China
+30/12/2019;ORF7a protein;3;China;China;China
+30/12/2019;ORF8 protein;3;China;China;China
+30/12/2019;spike glycoprotein;5;China;China;China;China;China
+30/12/2019;surface glycoprotein;3;China;China;China
+31/01/2020;envelope protein;2;USA;Taiwan
+31/01/2020;membrane glycoprotein;2;USA;Taiwan
+31/01/2020;nucleocapsid phosphoprotein;2;USA;Taiwan
+31/01/2020;orf10 protein;1;USA
+31/01/2020;ORF10 protein;1;Taiwan
+31/01/2020;orf1ab polyprotein;2;USA;Taiwan
+31/01/2020;orf3a protein;1;USA
+31/01/2020;ORF3a protein;1;Taiwan
+31/01/2020;orf6 protein;1;USA
+31/01/2020;ORF6 protein;1;Taiwan
+31/01/2020;orf7a protein;1;USA
+31/01/2020;ORF7a protein;1;Taiwan
+31/01/2020;orf8 protein;1;USA
+31/01/2020;ORF8 protein;1;Taiwan
+31/01/2020;surface glycoprotein;2;USA;Taiwan
